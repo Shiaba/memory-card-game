@@ -10,3 +10,36 @@
 body {
     font-family: "Oswald", sans-serif;
 }
+
+footer {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+#social-media {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 180%;
+    margin: 20px;
+    list-style: none;
+    background-color: black;
+}
+
+#facebook {
+    color: #4267B2;
+}
+
+#twitter {
+    color: #1877f2;
+}
+
+#youtube {
+    color: #FF0000;
+}
+
+#instagram {
+    color: #C13584;
+}
