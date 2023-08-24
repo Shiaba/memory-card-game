@@ -19,6 +19,38 @@ h1 {
     text-align: center;
 }
 
+.container {
+    display: grid;
+    gap: 1rem;
+    padding: 2.5rem 0;
+    outline: 5px solid black;
+    min-width: 280px;
+    align-self: center;
+    background-color: yellowgreen;
+}
+
+.animals {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 0.5em;
+    place-items: center;
+    border-radius: 10px;
+    padding: 0.5em;
+    background-color: red;
+}
+
+.animal {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.animal img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
 footer {
     background-color: black;
 }
