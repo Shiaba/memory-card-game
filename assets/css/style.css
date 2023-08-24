@@ -28,7 +28,17 @@ h1 {
     outline: 5px solid black;
     min-width: 280px;
     align-self: center;
-    background-color: yellowgreen;
+    background-color: pink;
+}
+
+.instruction {
+    background-color: cyan;
+    padding: 10px;
+}
+
+p {
+    max-width: 280px;
+    font-size: large;
 }
 
 .animals {
