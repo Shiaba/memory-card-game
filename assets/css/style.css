@@ -15,10 +15,12 @@ body {
     justify-content: space-between;
 }
 
+/* Title */
 h1 {
     text-align: center;
 }
 
+/* Container for memory game */
 .container {
     display: grid;
     gap: 1rem;
@@ -51,10 +53,12 @@ h1 {
     max-height: 80px;
 }
 
+/* footer */
 footer {
     background-color: black;
 }
 
+/* Social media icons */
 #social-media {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -78,4 +82,11 @@ footer {
 
 #instagram {
     color: #C13584;
+}
+
+/* Media query */
+@media screen and (max-width: 400px) {
+    .animals {
+        grid-template-columns: repeat(3, auto);
+    }
 }
