@@ -94,9 +94,38 @@ footer {
     color: #C13584;
 }
 
-/* Media query */
+/* Media query (MAX-width) */
 @media screen and (max-width: 400px) {
     .animals {
         grid-template-columns: repeat(3, auto);
+    }
+}
+
+/* Media query (MIN-width) */
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 5%;
+    }
+
+    .animals {
+        grid-gap: 1em;
+        border-radius: 10px;
+        padding: 1em;
+    }
+
+    .animal {
+        height: 120px;
+        width: 120px;
+    }
+
+    .animal img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
+
+@media screen and (min-width: 998px) {
+    #social-media :hover {
+        color: gray;
     }
 }
