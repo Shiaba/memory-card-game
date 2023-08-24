@@ -63,6 +63,30 @@ p {
     max-height: 80px;
 }
 
+/* Buttons & timer */
+.game-info {
+    font-size: larger;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+#stop-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+#restart-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+
 /* footer */
 footer {
     background-color: black;
