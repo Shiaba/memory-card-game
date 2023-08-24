@@ -9,14 +9,18 @@
 
 body {
     font-family: "Oswald", sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
 }
 
 footer {
-    position: absolute;
     background-color: black;
-    width: 100%;
-    bottom: 0;
-    box-sizing: border-box;
 }
 
 #social-media {
