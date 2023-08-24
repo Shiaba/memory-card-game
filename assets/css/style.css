@@ -18,6 +18,7 @@ body {
 /* Title */
 h1 {
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* Container for memory game */
