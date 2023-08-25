@@ -63,6 +63,23 @@ p {
     outline: 2px solid black;
 }
 
+.animal-front,
+.animal-back {
+    position: absolute;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.animal-back {
+    backface-visibility: hidden;
+    transform: rotateY(0);
+}
+
+.animal-front {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
 .animal img {
     max-width: 80px;
     max-height: 80px;
