@@ -108,6 +108,13 @@ p {
     padding: 10px 0;
 }
 
+#light-dark {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
 
 /* footer */
 footer {
