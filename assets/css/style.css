@@ -35,6 +35,8 @@ h1 {
 .instruction {
     background-color: cyan;
     padding: 10px;
+    border-radius: 10px;
+    outline: 2px solid black;
 }
 
 p {
@@ -50,6 +52,7 @@ p {
     border-radius: 10px;
     padding: 0.5em;
     background-color: red;
+    outline: 2px solid black;
 }
 
 .animal {
@@ -57,6 +60,7 @@ p {
     width: 80px;
     border-radius: 10px;
     background-color: white;
+    outline: 2px solid black;
 }
 
 .animal img {
