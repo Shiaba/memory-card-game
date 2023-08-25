@@ -33,7 +33,7 @@ h1 {
 }
 
 .instruction {
-    background-color: cyan;
+    background-color: orange;
     padding: 10px;
     border-radius: 10px;
     outline: 2px solid black;
@@ -41,7 +41,7 @@ h1 {
 
 p {
     max-width: 280px;
-    font-size: large;
+    font-size: 19px;
 }
 
 .animals {
@@ -87,7 +87,7 @@ p {
 
 /* Buttons & timer */
 .game-info {
-    font-size: larger;
+    font-size: 25px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -110,10 +110,11 @@ p {
 
 #light-dark {
     position: relative;
-    left: 10px;
+    left: 15px;
     top: 10px;
     font-size: 35px;
     cursor: pointer;
+    width: 20px;
 }
 
 /* footer */
