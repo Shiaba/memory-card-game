@@ -123,17 +123,32 @@ footer {
     color: #C13584;
 }
 
-/* Media query (MAX-width) */
+/* Media query (MAX-width 400px) */
 @media screen and (max-width: 400px) {
     .animals {
         grid-template-columns: repeat(3, auto);
     }
 }
 
-/* Media query (MIN-width) */
+/* Media query (MIN-width 400px) */
+@media screen and (min-width: 400px) {
+    .container {
+        padding: 5%;
+    }
+
+    p {
+        max-width: 400px;
+    }
+}
+
+/* Media query (min-width 768px) */
 @media screen and (min-width: 768px) {
     .container {
         padding: 5%;
+    }
+
+    p {
+        max-width: 550px;
     }
 
     .animals {
@@ -153,6 +168,7 @@ footer {
     }
 }
 
+/* Media query (min-width 998px) */
 @media screen and (min-width: 998px) {
     #social-media :hover {
         color: gray;
