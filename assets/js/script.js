@@ -7,7 +7,7 @@ let firstCard, secondCard;
 function flipCard() {
     if (lockboard) return;
     this.classList.add('flip');
-    
+
     //Flip cards
     if (!hasFlippedCard) {
         hasFlippedCard = true;
@@ -15,6 +15,8 @@ function flipCard() {
     } else {
         hasFlippedCard = false;
         secondCard = this;
+
+        //Add flipped count here?
 
         //Calculating match
         if (firstCard.dataset.framework ===
@@ -31,7 +33,7 @@ function flipCard() {
                 lockboard = false;
             }, 750);
         }
-        
+
     }
 }
 //Card shuffle
@@ -48,21 +50,13 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 var timer;
 var timeCount = document.getElementById('time');
 
-(function() {
-var sec = 0; 
-timer = setInterval(() => {
-    timeCount.innerHTML = ''+sec;
-    sec ++;
-}, 1000)
-})()
-
-
-
-
-
-
-
-
+(function () {
+    var sec = 0;
+    timer = setInterval(() => {
+        timeCount.innerHTML = '' + sec;
+        sec++;
+    }, 1000);
+})();
 
 // Light / Dark button function
 let toggle = document.getElementById('light-dark');
