@@ -7,7 +7,8 @@ let firstCard, secondCard;
 function flipCard() {
     if (lockboard) return;
     this.classList.add('flip');
-
+    
+    //Flip cards
     if (!hasFlippedCard) {
         hasFlippedCard = true;
         firstCard = this;
@@ -42,6 +43,26 @@ function flipCard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+//Timer 
+var timer;
+var timeCount = document.getElementById('time');
+
+(function() {
+var sec = 0; 
+timer = setInterval(() => {
+    timeCount.innerHTML = ''+sec;
+    sec ++;
+}, 1000)
+})()
+
+
+
+
+
+
+
+
 
 // Light / Dark button function
 let toggle = document.getElementById('light-dark');
