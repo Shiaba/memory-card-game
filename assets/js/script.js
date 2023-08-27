@@ -30,9 +30,16 @@ function flipCard() {
                 lockboard = false;
             }, 750);
         }
-
+        
     }
 }
+//Card shuffle
+(function cardShuffle() {
+    cards.forEach(card => {
+        let cardPosition = Math.floor(Math.random() * 16);
+        card.style.order = cardPosition;
+    });
+})();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
