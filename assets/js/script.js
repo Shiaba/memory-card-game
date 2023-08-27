@@ -1,3 +1,22 @@
+// Memory game
+let cards = document.querySelectorAll('.animal')
+let hasFlippedCard = false;
+let firstCard, secondCard;
+
+function flipCard() {
+    this.classList.add('flip');
+
+    if(!hasFlippedCard) {
+        hasFlippedCard = true;
+        firstCard = this;
+    } else {
+        hasFlippedCard = false;
+        secondCard = this;
+    }
+}
+
+cards.forEach(card => card.addEventListener('click', flipCard));
+
 // Light / Dark button function
 let toggle = document.getElementById('light-dark');
 

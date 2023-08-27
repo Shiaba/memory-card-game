@@ -68,16 +68,23 @@ p {
     position: absolute;
     cursor: pointer;
     transition: 0.8s;
+    backface-visibility: hidden;
 }
 
 .animal-back {
-    backface-visibility: hidden;
     transform: rotateY(0);
 }
 
-.animal-front {
-    backface-visibility: hidden;
+.animal.flip > .animal-back {
     transform: rotateY(180deg);
+}
+
+.animal-front {
+    transform: rotateY(180deg);
+}
+
+.animal.flip > .animal-front {
+    transform: rotateY(0);
 }
 
 .animal img {
