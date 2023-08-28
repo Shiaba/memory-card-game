@@ -5,7 +5,6 @@ let lockboard = false;
 let firstCard, secondCard;
 let moves = 0;
 
-
 document.getElementById('moves').textContent = moves;
 
 function flipCard() {
@@ -64,10 +63,6 @@ function unflipCard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
-
-//Restart button
-
-
 
 // Light / Dark button function
 let toggle = document.getElementById('light-dark');
