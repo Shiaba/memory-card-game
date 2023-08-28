@@ -5,8 +5,6 @@ let lockboard = false;
 let firstCard, secondCard;
 let moves = 0;
 
-document.getElementById('moves').textContent = moves;
-
 function flipCard() {
     if (lockboard) return;
     if (this === firstCard) return;
@@ -19,6 +17,7 @@ function flipCard() {
     } else {
         hasFlippedCard = false;
         secondCard = this;
+        //moves counter
         moves++;
         document.getElementById('moves').textContent = moves;
         
