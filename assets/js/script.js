@@ -3,7 +3,8 @@ let cards = document.querySelectorAll('.animal');
 let hasFlippedCard = false;
 let lockboard = false;
 let firstCard, secondCard;
-let moves = 0;
+let moves = 0
+var flippedCard = 0
 
 function flipCard() {
     if (lockboard) return;
@@ -20,17 +21,23 @@ function flipCard() {
         //moves counter
         moves++;
         document.getElementById('moves').textContent = moves;
-        
-        calculateMatch()
+
+        calculateMatch();
     }
 }
 
 //Calculate match
 function calculateMatch() {
+    //Match
     if (firstCard.dataset.framework ===
         secondCard.dataset.framework) {
 
         disableMatchedCards();
+        //Game over
+        flippedCard += 2
+        if (flippedCard === cards.length) {
+            //Add more here
+        }
     } else {
 
         unflipCard();
@@ -76,23 +83,21 @@ toggle.addEventListener('click', function () {
         body.style.background = 'white';
         body.style.color = 'black';
         body.style.transition = '1s';
-        
+
         instruction.style.background = 'cyan';
         instruction.style.color = 'black';
         instruction.style.transition = '1s';
 
-        moveCounter.style.color = 'black'
+        moveCounter.style.color = 'black';
     } else {
         body.style.background = 'black';
         body.style.color = 'white';
         body.style.transition = '1s';
-        
+
         instruction.style.background = 'red';
         instruction.style.color = 'white';
         instruction.style.transition = '1s';
 
-        moveCounter.style.color = 'black'
+        moveCounter.style.color = 'black';
     }
 });
-
-
