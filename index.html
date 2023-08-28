@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/69f27fd7ee.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header & instructions -->
     <h1>Memory Card Game</h1>
     <div class="container">
         <div class="instruction">
@@ -21,6 +22,7 @@
             If they do not match, the cards are turned over and you can continue until you get a match. <br>
             If the pictures match, you try again for another match until you have matched all cards together and the game ends.
             </p>
+        <!-- Main game images -->
         </div>
         <div class="animals">
             <div class="animal" data-framework="crab">
@@ -152,17 +154,19 @@
                 </div>
             </div>
         </div>
+        <!-- Buttons & moves counter -->
         <div class="game-info">
             <div id="move-counter">Moves: <span id="moves">0</span></div>
             <button id="stop-button">Stop</button>
             <button id="restart-button" onclick="location.reload()">Restart</button>
+        <!-- Light & dark button -->
         </div>
         <i id="light-dark" class="fa-solid fa-sun"></i>
     </div>
 
     <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
-    <!-- Footer -->
+    <!-- Footer / social media icons -->
     <footer>
         <ul id="social-media">
             <li><a id="facebook" href="https://facebook.com" rel="noopener" aria-label="Visit us on Facebook (opens in a new tab)" target="_black"><i class="fa-brands fa-facebook"></i></a></li>
