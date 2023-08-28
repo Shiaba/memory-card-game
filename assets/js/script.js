@@ -8,7 +8,7 @@ function flipCard() {
     if (lockboard) return;
     this.classList.add('flip');
 
-    //Flip cards
+    //Flip both cards
     if (!hasFlippedCard) {
         hasFlippedCard = true;
         firstCard = this;
@@ -16,26 +16,38 @@ function flipCard() {
         hasFlippedCard = false;
         secondCard = this;
 
-        //Add flipped count here?
-
-        //Calculating match
-        if (firstCard.dataset.framework ===
-            secondCard.dataset.framework) {
-            //Disable matched cards    
-            firstCard.removeEventListener('click', flipCard);
-            secondCard.removeEventListener('click', flipCard);
-            //Unflip if not matching
-        } else {
-            lockboard = true;
-            setTimeout(() => {
-                firstCard.classList.remove('flip');
-                secondCard.classList.remove('flip');
-                lockboard = false;
-            }, 750);
-        }
-
+        calculateMatch()
     }
 }
+
+//Calculate match
+function calculateMatch() {
+    if (firstCard.dataset.framework ===
+        secondCard.dataset.framework) {
+
+        disableMatchedCards();
+    } else {
+
+        unflipCard();
+    }
+}
+
+//Disable matched cards
+function disableMatchedCards() {
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+}
+
+//unflip cards
+function unflipCard() {
+    lockboard = true;
+    setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+        lockboard = false;
+    }, 750);
+}
+
 //Card shuffle
 (function cardShuffle() {
     cards.forEach(card => {

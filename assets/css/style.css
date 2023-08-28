@@ -33,7 +33,7 @@ h1 {
 }
 
 .instruction {
-    background-color: orange;
+    background-color: red;
     padding: 10px;
     border-radius: 10px;
     outline: 2px solid black;
