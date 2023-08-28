@@ -63,10 +63,12 @@ function unflipCard() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-// Light / Dark button function
+// Light & Dark button function for body
 let toggle = document.getElementById('light-dark');
-
 let body = document.querySelector('body');
+// For instructions & move counter
+let instruction = document.querySelector('.instruction');
+let moveCounter = document.getElementById('move-counter');
 
 toggle.addEventListener('click', function () {
     this.classList.toggle('fa-moon');
@@ -74,10 +76,22 @@ toggle.addEventListener('click', function () {
         body.style.background = 'white';
         body.style.color = 'black';
         body.style.transition = '1s';
+        
+        instruction.style.background = 'cyan';
+        instruction.style.color = 'black';
+        instruction.style.transition = '1s';
+
+        moveCounter.style.color = 'black'
     } else {
         body.style.background = 'black';
         body.style.color = 'white';
         body.style.transition = '1s';
+        
+        instruction.style.background = 'red';
+        instruction.style.color = 'white';
+        instruction.style.transition = '1s';
+
+        moveCounter.style.color = 'black'
     }
 });
 
