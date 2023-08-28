@@ -6,6 +6,7 @@ let firstCard, secondCard;
 
 function flipCard() {
     if (lockboard) return;
+    if (this === firstCard) return;
     this.classList.add('flip');
 
     //Flip both cards
