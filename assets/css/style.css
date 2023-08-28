@@ -92,11 +92,11 @@ p {
     max-height: 80px;
 }
 
-/* Buttons & timer */
+/* Buttons & move counter */
 .game-info {
     font-size: 25px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 10px;
 }

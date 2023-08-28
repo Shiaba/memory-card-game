@@ -5,6 +5,7 @@ let lockboard = false;
 let firstCard, secondCard;
 let moves = 0;
 
+
 document.getElementById('moves').textContent = moves;
 
 function flipCard() {
@@ -22,7 +23,6 @@ function flipCard() {
         moves++;
         document.getElementById('moves').textContent = moves;
         
-
         calculateMatch()
     }
 }
@@ -65,17 +65,9 @@ function unflipCard() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-//Timer 
-var timer;
-var timeCount = document.getElementById('time');
+//Restart button
 
-(function () {
-    var sec = 0;
-    timer = setInterval(() => {
-        timeCount.innerHTML = '' + sec;
-        sec++;
-    }, 1000);
-})();
+
 
 // Light / Dark button function
 let toggle = document.getElementById('light-dark');
