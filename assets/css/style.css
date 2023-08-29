@@ -44,6 +44,7 @@ p {
     font-size: 19px;
 }
 
+/* Animal image  */
 .animals {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -75,7 +76,7 @@ p {
     transform: rotateY(0);
 }
 
-.animal.flip>.animal-back {
+.animal.flip > .animal-back {
     transform: rotateY(180deg);
 }
 
@@ -83,7 +84,7 @@ p {
     transform: rotateY(180deg);
 }
 
-.animal.flip>.animal-front {
+.animal.flip > .animal-front {
     transform: rotateY(0);
 }
 
@@ -96,16 +97,9 @@ p {
 .game-info {
     font-size: 25px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 10px;
-}
-
-#stop-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: 10px;
-    padding: 10px 0;
 }
 
 #restart-button {
@@ -115,6 +109,7 @@ p {
     padding: 10px 0;
 }
 
+/* Light & dark button */
 #light-dark {
     position: relative;
     left: 15px;

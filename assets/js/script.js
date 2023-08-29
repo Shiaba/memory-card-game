@@ -35,7 +35,7 @@ function calculateMatch() {
         secondCard.dataset.framework) {
 
         disableMatchedCards();
-
+        
         gameOver();
 
     } else {
