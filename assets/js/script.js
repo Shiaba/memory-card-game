@@ -36,8 +36,8 @@ function calculateMatch() {
 
         disableMatchedCards();
         
-        gameOver();
-
+        gameOver()
+        
     } else {
 
         unflipCard();
