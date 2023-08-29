@@ -8,7 +8,6 @@ var flippedCard = 0
 let moves = 0;
 console.log(moves);
 
-
 function flipCard() {
     if (lockboard) return;
     if (this === firstCard) return;
@@ -37,7 +36,7 @@ function calculateMatch() {
 
         disableMatchedCards();
 
-        gameOver()
+        gameOver();
 
     } else {
 
@@ -73,8 +72,20 @@ function unflipCard() {
 function gameOver() {
     flippedCard += 2;
     if (flippedCard === cards.length) {
-        //Add more here
         
+        reveal();
+    }
+}
+
+//Game over screen
+let gameOverScreen = document.querySelector('.game-over');
+let hideScreen = true;
+
+function reveal() {
+    if (hideScreen) {
+        gameOverScreen.style.display = 'block';
+    } else {
+        gameOverScreen.style.display = 'none';
     }
 }
 

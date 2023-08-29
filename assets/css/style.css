@@ -75,7 +75,7 @@ p {
     transform: rotateY(0);
 }
 
-.animal.flip > .animal-back {
+.animal.flip>.animal-back {
     transform: rotateY(180deg);
 }
 
@@ -83,7 +83,7 @@ p {
     transform: rotateY(180deg);
 }
 
-.animal.flip > .animal-front {
+.animal.flip>.animal-front {
     transform: rotateY(0);
 }
 
@@ -122,6 +122,32 @@ p {
     font-size: 35px;
     cursor: pointer;
     width: 20px;
+}
+
+/* Game over screen */
+.game-over {
+    position: fixed;
+    align-self: center;
+    top: 250px;
+    width: 280px;
+    height: 300px;
+    background-color: darkorange;
+    font-size: larger;
+    display: none;
+}
+
+.game-over-text {
+    padding: 10px;
+}
+
+#restart {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 0;
+    left: 60px;
+    width: 160px;
+    position: relative;
 }
 
 /* footer */
