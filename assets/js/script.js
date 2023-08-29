@@ -36,14 +36,9 @@ function calculateMatch() {
         secondCard.dataset.framework) {
 
         disableMatchedCards();
-        //Game over
-        flippedCard += 2
-        if (flippedCard === cards.length) {
-            //Add more here
-            alert(`Congratulations, you finished the game in ${moves} moves!
-            Press the restart button to play again.`)
-        }
-        
+
+        gameOver()
+
     } else {
 
         unflipCard();
@@ -73,6 +68,15 @@ function unflipCard() {
         card.style.order = cardPosition;
     });
 })();
+
+//Game over
+function gameOver() {
+    flippedCard += 2;
+    if (flippedCard === cards.length) {
+        //Add more here
+        
+    }
+}
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
