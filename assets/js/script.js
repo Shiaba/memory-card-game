@@ -3,10 +3,8 @@ let cards = document.querySelectorAll('.animal');
 let hasFlippedCard = false;
 let lockboard = false;
 let firstCard, secondCard;
-var flippedCard = 0
-// Log total score in game over section
+var flippedCard = 0;
 let moves = 0;
-console.log(moves);
 
 function flipCard() {
     if (lockboard) return;
@@ -36,7 +34,7 @@ function calculateMatch() {
 
         disableMatchedCards();
         
-        gameOver()
+        gameOver();
         
     } else {
 
