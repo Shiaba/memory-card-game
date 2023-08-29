@@ -3,8 +3,11 @@ let cards = document.querySelectorAll('.animal');
 let hasFlippedCard = false;
 let lockboard = false;
 let firstCard, secondCard;
-let moves = 0
 var flippedCard = 0
+// Log total score in game over section
+let moves = 0;
+console.log(moves);
+
 
 function flipCard() {
     if (lockboard) return;
@@ -37,7 +40,10 @@ function calculateMatch() {
         flippedCard += 2
         if (flippedCard === cards.length) {
             //Add more here
+            alert(`Congratulations, you finished the game in ${moves} moves!
+            Press the restart button to play again.`)
         }
+        
     } else {
 
         unflipCard();
